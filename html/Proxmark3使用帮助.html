@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Proxmark3使用帮助 | cnlnn的垃圾堆 | 好好学习，天天向上</title>
+  <meta name="keywords" content=" help , RFID , Proxmark3 ">
+  <meta name="description" content="Proxmark3使用帮助 | cnlnn的垃圾堆 | 好好学习，天天向上">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="很抱歉，您所访问的地址并不存在">
+<meta property="og:url" content="https://cnlnn.github.io/404.html">
+<meta property="og:site_name" content="cnlnn的垃圾堆 | 好好学习，天天向上">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.downk.cc/item/5e7af5a6504f4bcb04bbdd89.jpg">
+<meta property="article:published_time" content="2020-03-25T07:13:08.000Z">
+<meta property="article:modified_time" content="2020-03-25T07:15:50.000Z">
+<meta property="article:author" content="cnlnn">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.downk.cc/item/5e7af5a6504f4bcb04bbdd89.jpg">
+
+
+<link rel="icon" href="/img/avatar.png">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-dark.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.png"/>
+</a>
+<div class="author">
+    <span>cnlnn</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <i class="iconfont icon-rss"></i>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/cnlnn"
+               target="_blank">
+                
+                    <i class="iconfont icon-github"></i>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:cnlnnn@qq.com"
+               target="_blank">
+                
+                    <i class="iconfont icon-email"></i>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(10)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Android">
+                        
+                        Android
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        
+                        Linux
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Misc">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Misc
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Misc<--->笔记">
+                                        
+                                        笔记
+                                        
+                                            <small>(2
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Web">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Web
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Web<--->实战">
+                                        
+                                        实战
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Wireless">
+                        <i class="fold iconfont icon-right"></i>
+                        
+                        Wireless
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                        <ul class="sub hide">
+                            
+                                <li>
+                                    <div data-rel="Wireless<--->WiFi">
+                                        
+                                        WiFi
+                                        
+                                            <small>(1
+                                                )</small>
+                                        
+                                    </div>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">关于</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="10">
+<input type="hidden" id="yelog_site_word_count" value="4.7k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://zjhcofi.com/">ZJHCOFI</a></li>
+            
+            <li><a target="_blank" href="http://arctique.gitee.io/">Arctique</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>deepin-wine</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>help</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Proxmark3</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RFID</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL注入</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a  class="全部文章 "
+           href="/html/%E4%B8%A4%E6%AC%A1%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%9D%A2%E8%AF%95%E7%BB%8F%E5%8E%86.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="两次失败的面试经历">两次失败的面试经历</span>
+            <span class="post-date" title="2021-01-07 18:21:28">2021/01/07</span>
+        </a>
+        
+        <a  class="全部文章 Wireless WiFi "
+           href="/html/Aircrack-ng%E6%8A%93%E5%8F%96%E6%8F%A1%E6%89%8B%E5%8C%85.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Aircrack-ng抓取握手包">Aircrack-ng抓取握手包</span>
+            <span class="post-date" title="2020-12-08 16:11:00">2020/12/08</span>
+        </a>
+        
+        <a  class="全部文章 Android "
+           href="/html/%E3%80%8A%E6%95%99%E6%88%91%E5%85%84%E5%BC%9F%E5%AD%A6Android%E9%80%86%E5%90%91%E3%80%8B%E7%B3%BB%E5%88%97%E8%AF%BE%E7%A8%8B.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Android安全学习导航">Android安全学习导航</span>
+            <span class="post-date" title="2020-12-08 15:44:00">2020/12/08</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/html/Linux%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Linux日常使用配置">Linux日常使用配置</span>
+            <span class="post-date" title="2020-11-05 19:26:00">2020/11/05</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/html/%E5%B0%86Termux%E6%94%B9%E9%80%A0%E6%88%90%E7%A7%BB%E5%8A%A8%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E7%AE%B1.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="将Termux改造成移动测试工具箱">将Termux改造成移动测试工具箱</span>
+            <span class="post-date" title="2020-11-05 13:32:53">2020/11/05</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/html/linux+windows%E5%8F%8C%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="linux+windows双系统的问题解决">linux+windows双系统的问题解决</span>
+            <span class="post-date" title="2020-09-12 21:37:00">2020/09/12</span>
+        </a>
+        
+        <a  class="全部文章 Linux "
+           href="/html/deepin-wine-install.html"
+           data-tag="deepin-wine"
+           data-author="" >
+            <span class="post-title" title="deepin-wine的安装与使用">deepin-wine的安装与使用</span>
+            <span class="post-date" title="2020-07-18 01:36:00">2020/07/18</span>
+        </a>
+        
+        <a  class="全部文章 Misc 笔记 "
+           href="/html/Veil%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Veil安装失败的解决方法">Veil安装失败的解决方法</span>
+            <span class="post-date" title="2020-03-25 18:30:00">2020/03/25</span>
+        </a>
+        
+        <a  class="全部文章 Misc 笔记 "
+           href="/html/Proxmark3%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9.html"
+           data-tag="help,RFID,Proxmark3"
+           data-author="" >
+            <span class="post-title" title="Proxmark3使用帮助">Proxmark3使用帮助</span>
+            <span class="post-date" title="2020-03-13 13:11:00">2020/03/13</span>
+        </a>
+        
+        <a  class="全部文章 Web 实战 "
+           href="/html/%E8%AE%B0%E4%B8%80%E6%AC%A1sql%E6%8A%A5%E9%94%99%E6%B3%A8%E5%85%A5%E5%88%B0%E6%89%B9%E9%87%8F%E6%A3%80%E6%B5%8B.html"
+           data-tag="SQL注入"
+           data-author="" >
+            <span class="post-title" title="记一次sql报错注入到批量检测">记一次sql报错注入到批量检测</span>
+            <span class="post-date" title="2020-03-12 23:57:00">2020/03/12</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Proxmark3使用帮助" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Proxmark3使用帮助</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Misc">Misc</a> > 
+            
+            <a  data-rel="Misc&lt;---&gt;笔记">笔记</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">help</a>
+            
+            <a class="color5">RFID</a>
+            
+            <a class="color5">Proxmark3</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-01-08 01:12:32'>2020-03-13 13:11</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:1.7k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E7%94%B5%E8%84%91"><span class="toc-text">连接电脑</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%98%E6%96%B9"><span class="toc-text">官方</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows"><span class="toc-text">Windows</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux"><span class="toc-text">Linux</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%B0%E4%BA%BA"><span class="toc-text">冰人</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows-1"><span class="toc-text">Windows</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Linux-1"><span class="toc-text">Linux</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA"><span class="toc-text">连接安卓手机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Termux"><span class="toc-text">Termux</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E6%BA%90%E5%AE%89%E8%A3%85"><span class="toc-text">通过源安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E8%A1%8C%E7%BC%96%E8%AF%91"><span class="toc-text">自行编译</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-text">安装依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%8B%E9%9A%86-RRG-proxmark3-%E5%BA%93"><span class="toc-text">克隆 RRG&#x2F;proxmark3 库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%AA%E7%BC%96%E8%AF%91%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="toc-text">只编译客户端</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%89root%E6%9D%83%E9%99%90"><span class="toc-text">有root权限  </span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%97%A0root%E6%9D%83%E9%99%90"><span class="toc-text">无root权限</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RFID-Tools"><span class="toc-text">RFID Tools</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E5%9B%BA%E4%BB%B6%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E5%B8%AE%E5%8A%A9"><span class="toc-text">官方固件命令使用帮助</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#hw-%E7%A1%AC%E4%BB%B6%E6%A3%80%E6%B5%8B%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-text">hw 硬件检测相关命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hf-%E9%AB%98%E9%A2%91%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-text">hf 高频相关命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#hf-14a-%EF%BC%88ISO14443A%E5%8D%A1%EF%BC%89"><span class="toc-text">hf 14a （ISO14443A卡）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hf-14b-%EF%BC%88ISO14443B%E5%8D%A1%EF%BC%89"><span class="toc-text">hf 14b （ISO14443B卡）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hf-15-%EF%BC%88ISO15693%E5%8D%A1%EF%BC%89"><span class="toc-text">hf 15 （ISO15693卡）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hf-mf-%EF%BC%88MIFARE%E5%8D%A1%EF%BC%89"><span class="toc-text">hf mf （MIFARE卡）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#lf-%E4%BD%8E%E9%A2%91%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4"><span class="toc-text">lf 低频相关命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><span class="toc-text">相关链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-text">参考文章</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-6 i,
+    .toc-level-6 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="连接电脑"><a href="#连接电脑" class="headerlink" title="连接电脑"></a>连接电脑</h1><h2 id="官方"><a href="#官方" class="headerlink" title="官方"></a>官方</h2><h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>克隆 proxmark3 库</p>
+<p><code>git clone https://github.com/proxmark/proxmark3.git</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">发行版</th>
+<th align="left">安装依赖</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Kali Linux</td>
+<td align="left"><code>sudo apt install git build-essential libreadline5 libreadline-dev gcc-arm-none-eabi libusb-0.1-4 libusb-dev libqt4-dev ncurses-dev perl pkg-config libpcsclite-dev pcscd</code></td>
+</tr>
+<tr>
+<td align="center">Ubuntu</td>
+<td align="left"><code>sudo apt install p7zip git build-essential libreadline5 libreadline-dev libusb-0.1-4 libusb-dev libqt4-dev perl pkg-config wget libncurses5-dev gcc-arm-none-eabi libstdc++-arm-none-eabi-newlib libpcsclite-dev pcscd</code></td>
+</tr>
+<tr>
+<td align="center">Gentoo Linux</td>
+<td align="left"><code> sudo emerge git p7zip make gcc readline dev-libs/libusb perl wget dev-qt/qt-meta:4 sys-apps/pcsc-lite</code></td>
+</tr>
+<tr>
+<td align="center">openSUSE</td>
+<td align="left"><code>sudo zypper install -t pattern devel_basis</code><br><code>sudo zypper install git libreadline7 libusb-1_0-0 libusb-1_0-devel perl libqt4-devel readline7-devel termcap wget pcsc-lite</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="冰人"><a href="#冰人" class="headerlink" title="冰人"></a>冰人</h2><h3 id="Windows-1"><a href="#Windows-1" class="headerlink" title="Windows"></a>Windows</h3><p>详见<a target="_blank" rel="noopener" href="https://github.com/RfidResearchGroup/proxmark3/blob/master/doc/md/Installation_Instructions/Windows-Installation-Instructions.md">Windows安装说明</a></p>
+<h3 id="Linux-1"><a href="#Linux-1" class="headerlink" title="Linux"></a>Linux</h3><p>克隆 RRG/proxmark3 库</p>
+<p><code>git clone https://github.com/RfidResearchGroup/proxmark3.git</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">发行版</th>
+<th align="left">安装依赖</th>
+<th align="left">蓝牙支持（rdv4）</th>
+<th align="left">图形组件（hw&nbsp;tune）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Debian</td>
+<td align="left"><code>sudo apt-get install --no-install-recommends git ca-certificates build-essential pkg-config libreadline-dev gcc-arm-none-eabi libnewlib-dev qtbase5-dev libbz2-dev libbluetooth-dev</code></td>
+<td align="left">libbluetooth-dev</td>
+<td align="left">qtbase5-dev</td>
+</tr>
+<tr>
+<td align="center">ArchLinux</td>
+<td align="left"><code>sudo pacman -Sy git base-devel readline bzip2 arm-none-eabi-gcc arm-none-eabi-newlib qt5-base bluez --needed</code></td>
+<td align="left">bluez</td>
+<td align="left">qt5-base</td>
+</tr>
+<tr>
+<td align="center">Ferdora</td>
+<td align="left"><code>sudo dnf install git make gcc gcc-c++ arm-none-eabi-gcc-cs arm-none-eabi-newlib readline-devel bzip2-devel qt5-qtbase-devel bluez-libs-devel libatomic</code></td>
+<td align="left">bluez-libs-devel</td>
+<td align="left">qt5-qtbase-devel</td>
+</tr>
+<tr>
+<td align="center">OpenSUSE</td>
+<td align="left"><code>sudo zypper install git patterns-devel-base-devel_basis gcc-c++ readline-devel libbz2-devel cross-arm-none-gcc9 cross-arm-none-newlib-devel libqt5-qtbase-devel</code></td>
+<td align="left">不提供</td>
+<td align="left">libqt5-qtbase-devel</td>
+</tr>
+</tbody></table>
+<p>根据自己的PM3平台进行判断</p>
+<p>如果使用的是rdv4<br>可以直接编译<code>make clean &amp;&amp; make all</code><br>也可以自己指定平台为<strong>PM3RDV4</strong>进行编译<code>make clean &amp;&amp; make all PLATFORM=PM3RDV4</code></p>
+<p>其他平台（例如我用的proxmark3 easy）  <br>则指定平台为<strong>PM3OTHER</strong>进行编译<br><code>make clean &amp;&amp; make all PLATFORM=PM3OTHER</code></p>
+<p>需要具体调整固件的可以查看<a target="_blank" rel="noopener" href="https://github.com/RfidResearchGroup/proxmark3/blob/master/doc/md/Use_of_Proxmark/4_Advanced-compilation-parameters.md">高级编译参数</a></p>
+<hr>
+<h1 id="连接安卓手机"><a href="#连接安卓手机" class="headerlink" title="连接安卓手机"></a>连接安卓手机</h1><p>都只能够用冰人固件</p>
+<h2 id="Termux"><a href="#Termux" class="headerlink" title="Termux"></a>Termux</h2><p>Termux安装地址：<br><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.termux">谷歌商店</a><br><a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/com.termux">酷安市场</a></p>
+<h3 id="通过源安装"><a href="#通过源安装" class="headerlink" title="通过源安装"></a>通过源安装</h3><p><code>pkg install proxmark3</code></p>
+<p>虽然方便但常常会因为版本与自己编译的固件不一样而出现以下报错</p>
+<blockquote>
+<p>$ sudo proxmark3 /dev/ttyACM0<br>[=] Session log /data/data/com.termux/files/home/.suroot/.proxmark3/log_20200815.txt<br>[=] Loading Preferences…<br>[+] loaded from JSON file /data/data/com.termux/files/home/.suroot/.proxmark3/preferences.json<br><font color="orange">[=]</font> Using UART port <font color="orange">/dev/ttyACM0</font><br><font color="red">[!!] 🚨 Capabilities structure version sent by Proxmark3 is not the same as the one used by the client!</font><br><font color="red">[!!] 🚨 Please flash the Proxmark with the same version as the client.</font><br><font color="red">[!!] 🚨 ERROR:</font>  cannot communicate with the Proxmark</p>
+</blockquote>
+<h3 id="自行编译"><a href="#自行编译" class="headerlink" title="自行编译"></a>自行编译</h3><h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><pre><code class="bash">pkg install make clang clang++ readline libc++ git</code></pre>
+<h4 id="克隆-RRG-proxmark3-库"><a href="#克隆-RRG-proxmark3-库" class="headerlink" title="克隆 RRG/proxmark3 库"></a>克隆 RRG/proxmark3 库</h4><pre><code class="bash">git clone https://github.com/RfidResearchGroup/proxmark3.git</code></pre>
+<h4 id="只编译客户端"><a href="#只编译客户端" class="headerlink" title="只编译客户端"></a>只编译客户端</h4><pre><code class="bash">cd proxmark3 &amp;&amp; make clean &amp;&amp; make client</code></pre>
+<h5 id="有root权限"><a href="#有root权限" class="headerlink" title="有root权限  "></a>有root权限  </h5><p>在Termux安装tsu </p>
+<pre><code class="bash">pkg install tsu</code></pre>
+<p><code>sudo client/proxmark3 /dev/ttyACM0</code> // </p>
+<h5 id="无root权限"><a href="#无root权限" class="headerlink" title="无root权限"></a>无root权限</h5><p>安装<a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.hardcodedjoy.tcpuart">TCPUART</a>  </p>
+<p>从上往下  </p>
+<p>USB_USRT<br>点击Connect<br>弹窗“要允许TCPUART访问proxmark3吗”点确定  </p>
+<p>TCP<br>切换 client -&gt; server<br>修改端口（默认8080）<br>点击Start  </p>
+<p>然后Termux处输入  </p>
+<p><code>client/proxmark3 tcp:localhost:端口</code></p>
+<h2 id="RFID-Tools"><a href="#RFID-Tools" class="headerlink" title="RFID Tools"></a>RFID Tools</h2><p>RFID Tools安装地址：<br><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.rfidresearchgroup.rfidtools">谷歌商店</a><br><a target="_blank" rel="noopener" href="https://www.coolapk.com/apk/com.rfidresearchgroup.rfidtools">酷安市场</a></p>
+<p>自带Termux环境，免root</p>
+<hr>
+<h1 id="官方固件命令使用帮助"><a href="#官方固件命令使用帮助" class="headerlink" title="官方固件命令使用帮助"></a>官方固件命令使用帮助</h1><h2 id="hw-硬件检测相关命令"><a href="#hw-硬件检测相关命令" class="headerlink" title="hw 硬件检测相关命令"></a>hw 硬件检测相关命令</h2><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">detectreader</td>
+<td>[‘l’|’h’] – Detect external reader field (使用选项 ‘l’ 或 ‘h’  来限制 低频 或 高频)</td>
+</tr>
+<tr>
+<td align="center">fpgaoff</td>
+<td>Set FPGA off</td>
+</tr>
+<tr>
+<td align="center">lcd</td>
+<td>&lt;HEX command&gt; &lt;count&gt; – Send command/data to LCD</td>
+</tr>
+<tr>
+<td align="center">lcdreset</td>
+<td>Hardware reset LCD</td>
+</tr>
+<tr>
+<td align="center">readmem</td>
+<td>[address] – Read memory at decimal address from flash</td>
+</tr>
+<tr>
+<td align="center">reset</td>
+<td>Reset the Proxmark3</td>
+</tr>
+<tr>
+<td align="center">setlfdivisor</td>
+<td>&lt;19 - 255&gt; – Drive LF antenna at 12Mhz/(divisor+1)</td>
+</tr>
+<tr>
+<td align="center">setmux</td>
+<td>&lt;loraw|hiraw|lopkd|hipkd&gt; – Set the ADC mux to a specific value</td>
+</tr>
+<tr>
+<td align="center">tune</td>
+<td>[‘l’|’h’] – 测量天线调谐 (使用选项 ‘l’ 或 ‘h’  来限制 低频 或 高频)</td>
+</tr>
+<tr>
+<td align="center">version</td>
+<td>Show version information about the connected Proxmark</td>
+</tr>
+<tr>
+<td align="center">status</td>
+<td>Show runtime status information about the connected Proxmark</td>
+</tr>
+<tr>
+<td align="center">ping</td>
+<td>测试pm3是否有响应</td>
+</tr>
+</tbody></table>
+<p><code>hw tune</code>        //测量天线调谐</p>
+<p><code>hw version</code>        //显示Proxmark3的固件版本</p>
+<hr>
+<h2 id="hf-高频相关命令"><a href="#hf-高频相关命令" class="headerlink" title="hf 高频相关命令"></a>hf 高频相关命令</h2><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">14a</td>
+<td>ISO14443A RFIDs…</td>
+</tr>
+<tr>
+<td align="center">14b</td>
+<td>ISO14443B RFIDs…</td>
+</tr>
+<tr>
+<td align="center">15</td>
+<td>ISO15693 RFIDs…</td>
+</tr>
+<tr>
+<td align="center">epa</td>
+<td>德国身份证…</td>
+</tr>
+<tr>
+<td align="center">emv</td>
+<td>EMV cards…</td>
+</tr>
+<tr>
+<td align="center">legic</td>
+<td>LEGIC RFIDs…</td>
+</tr>
+<tr>
+<td align="center">iclass</td>
+<td>ICLASS RFIDs…</td>
+</tr>
+<tr>
+<td align="center">mf</td>
+<td>MIFARE RFIDs…</td>
+</tr>
+<tr>
+<td align="center">mfu</td>
+<td>MIFARE Ultralight RFIDs…</td>
+</tr>
+<tr>
+<td align="center">topaz</td>
+<td>TOPAZ (NFC Type 1) RFIDs…</td>
+</tr>
+<tr>
+<td align="center">tune</td>
+<td>Continuously measure HF antenna tuning</td>
+</tr>
+<tr>
+<td align="center">list</td>
+<td>List protocol data in trace buffer</td>
+</tr>
+<tr>
+<td align="center">search</td>
+<td>Search for known HF tags [preliminary]</td>
+</tr>
+<tr>
+<td align="center">snoop</td>
+<td>&lt;samples to skip (10000)&gt; &lt;triggers to skip (1)&gt; Generic HF Snoop</td>
+</tr>
+</tbody></table>
+<h3 id="hf-14a-（ISO14443A卡）"><a href="#hf-14a-（ISO14443A卡）" class="headerlink" title="hf 14a （ISO14443A卡）"></a>hf 14a （ISO14443A卡）</h3><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">list</td>
+<td>[Deprecated] List ISO 14443a history</td>
+</tr>
+<tr>
+<td align="center">reader</td>
+<td>Start acting like an ISO14443 Type A reader</td>
+</tr>
+<tr>
+<td align="center">info</td>
+<td>Reads card and shows information about it</td>
+</tr>
+<tr>
+<td align="center">cuids</td>
+<td>&lt;n&gt; Collect n&gt;0 ISO14443 Type A UIDs in one go</td>
+</tr>
+<tr>
+<td align="center">sim</td>
+<td>&lt;UID&gt; – Simulate ISO 14443a tag</td>
+</tr>
+<tr>
+<td align="center">snoop</td>
+<td>Eavesdrop ISO 14443 Type A</td>
+</tr>
+<tr>
+<td align="center">apdu</td>
+<td>Send an ISO 7816-4 APDU via ISO 14443-4 block transmission protocol</td>
+</tr>
+<tr>
+<td align="center">raw</td>
+<td>Send raw hex data to tag</td>
+</tr>
+</tbody></table>
+<p><code>hf 14a re</code>        // 等同<code>hf 14a read</code></p>
+<h3 id="hf-14b-（ISO14443B卡）"><a href="#hf-14b-（ISO14443B卡）" class="headerlink" title="hf 14b （ISO14443B卡）"></a>hf 14b （ISO14443B卡）</h3><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">info</td>
+<td>Find and print details about a 14443B tag</td>
+</tr>
+<tr>
+<td align="center">list</td>
+<td>[Deprecated] List ISO 14443B history</td>
+</tr>
+<tr>
+<td align="center">reader</td>
+<td>Act as a 14443B reader to identify a tag</td>
+</tr>
+<tr>
+<td align="center">sim</td>
+<td>Fake ISO 14443B tag</td>
+</tr>
+<tr>
+<td align="center">snoop</td>
+<td>Eavesdrop ISO 14443B</td>
+</tr>
+<tr>
+<td align="center">sri512read</td>
+<td>Read contents of a SRI512 tag</td>
+</tr>
+<tr>
+<td align="center">srix4kread</td>
+<td>Read contents of a SRIX4K tag</td>
+</tr>
+<tr>
+<td align="center">sriwrite</td>
+<td>Write data to a SRI512 | SRIX4K tag</td>
+</tr>
+<tr>
+<td align="center">raw</td>
+<td>Send raw hex data to tag</td>
+</tr>
+</tbody></table>
+<h3 id="hf-15-（ISO15693卡）"><a href="#hf-15-（ISO15693卡）" class="headerlink" title="hf 15 （ISO15693卡）"></a>hf 15 （ISO15693卡）</h3><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">demod</td>
+<td>Demodulate ISO15693 from tag</td>
+</tr>
+<tr>
+<td align="center">read</td>
+<td>Read HF tag (ISO 15693)</td>
+</tr>
+<tr>
+<td align="center">record</td>
+<td>Record Samples (ISO 15693)</td>
+</tr>
+<tr>
+<td align="center">reader</td>
+<td>Act like an ISO15693 reader</td>
+</tr>
+<tr>
+<td align="center">sim</td>
+<td>Fake an ISO15693 tag</td>
+</tr>
+<tr>
+<td align="center">cmd</td>
+<td>Send direct commands to ISO15693 tag</td>
+</tr>
+<tr>
+<td align="center">findafi</td>
+<td>Brute force AFI of an ISO15693 tag</td>
+</tr>
+<tr>
+<td align="center">dumpmemory</td>
+<td>Read all memory pages of an ISO15693 tag</td>
+</tr>
+</tbody></table>
+<h3 id="hf-mf-（MIFARE卡）"><a href="#hf-mf-（MIFARE卡）" class="headerlink" title="hf mf （MIFARE卡）"></a>hf mf （MIFARE卡）</h3><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">dbg</td>
+<td>Set default debug mode</td>
+</tr>
+<tr>
+<td align="center">rdbl</td>
+<td>Read MIFARE classic block</td>
+</tr>
+<tr>
+<td align="center">rdsc</td>
+<td>Read MIFARE classic sector</td>
+</tr>
+<tr>
+<td align="center">dump</td>
+<td>Dump MIFARE classic tag to binary file</td>
+</tr>
+<tr>
+<td align="center">restore</td>
+<td>Restore MIFARE classic binary file to BLANK tag</td>
+</tr>
+<tr>
+<td align="center">wrbl</td>
+<td>Write MIFARE classic block</td>
+</tr>
+<tr>
+<td align="center">chk</td>
+<td>Test block keys</td>
+</tr>
+<tr>
+<td align="center">mifare</td>
+<td>Read parity error messages.</td>
+</tr>
+<tr>
+<td align="center">hardnested</td>
+<td>Nested attack for hardened Mifare cards</td>
+</tr>
+<tr>
+<td align="center">nested</td>
+<td>Test nested authentication</td>
+</tr>
+<tr>
+<td align="center">sniff</td>
+<td>Sniff card-reader communication</td>
+</tr>
+<tr>
+<td align="center">sim</td>
+<td>Simulate MIFARE card</td>
+</tr>
+<tr>
+<td align="center">eclr</td>
+<td>Clear simulator memory block</td>
+</tr>
+<tr>
+<td align="center">eget</td>
+<td>Get simulator memory block</td>
+</tr>
+<tr>
+<td align="center">eset</td>
+<td>Set simulator memory block</td>
+</tr>
+<tr>
+<td align="center">eload</td>
+<td>Load from file emul dump</td>
+</tr>
+<tr>
+<td align="center">esave</td>
+<td>Save to file emul dump</td>
+</tr>
+<tr>
+<td align="center">ecfill</td>
+<td>Fill simulator memory with help of keys from simulator</td>
+</tr>
+<tr>
+<td align="center">ekeyprn</td>
+<td>Print keys from simulator memory</td>
+</tr>
+<tr>
+<td align="center">cwipe</td>
+<td>Wipe magic Chinese card</td>
+</tr>
+<tr>
+<td align="center">csetuid</td>
+<td>Set UID for magic Chinese card</td>
+</tr>
+<tr>
+<td align="center">csetblk</td>
+<td>Write block - Magic Chinese card</td>
+</tr>
+<tr>
+<td align="center">cgetblk</td>
+<td>Read block - Magic Chinese card</td>
+</tr>
+<tr>
+<td align="center">cgetsc</td>
+<td>Read sector - Magic Chinese card</td>
+</tr>
+<tr>
+<td align="center">cload</td>
+<td>Load dump into magic Chinese card</td>
+</tr>
+<tr>
+<td align="center">csave</td>
+<td>Save dump from magic Chinese card into file or emulator</td>
+</tr>
+<tr>
+<td align="center">decrypt</td>
+<td>[nt] [ar_enc] [at_enc] [data] - to decrypt snoop or trace</td>
+</tr>
+</tbody></table>
+<p><code>hf mf chk *1 ? t</code></p>
+<p><code>hf mf mifare</code></p>
+<p><code>hf mf nested 1 0 A ffffffffffff</code></p>
+<p><code>hf mf nested 1 0 A ffffffffffff d</code></p>
+<hr>
+<h2 id="lf-低频相关命令"><a href="#lf-低频相关命令" class="headerlink" title="lf 低频相关命令"></a>lf 低频相关命令</h2><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">awid</td>
+<td>AWID RFIDs…</td>
+</tr>
+<tr>
+<td align="center">cotag</td>
+<td>COTAG CHIPs…</td>
+</tr>
+<tr>
+<td align="center">em</td>
+<td>EM4X CHIPs &amp; RFIDs…</td>
+</tr>
+<tr>
+<td align="center">fdx</td>
+<td>FDX-B RFIDs…</td>
+</tr>
+<tr>
+<td align="center">gproxii</td>
+<td>G Prox II RFIDs…</td>
+</tr>
+<tr>
+<td align="center">hid</td>
+<td>HID RFIDs…</td>
+</tr>
+<tr>
+<td align="center">hitag</td>
+<td>Hitag CHIPs…</td>
+</tr>
+<tr>
+<td align="center">io</td>
+<td>ioProx RFIDs…</td>
+</tr>
+<tr>
+<td align="center">indala</td>
+<td>Indala RFIDs…</td>
+</tr>
+<tr>
+<td align="center">jablotron</td>
+<td>Jablotron RFIDs…</td>
+</tr>
+<tr>
+<td align="center">nexwatch</td>
+<td>NexWatch RFIDs…</td>
+</tr>
+<tr>
+<td align="center">noralsy</td>
+<td>Noralsy RFIDs…</td>
+</tr>
+<tr>
+<td align="center">pac</td>
+<td>PAC/Stanley RFIDs…</td>
+</tr>
+<tr>
+<td align="center">paradox</td>
+<td>Paradox RFIDs…</td>
+</tr>
+<tr>
+<td align="center">presco</td>
+<td>Presco RFIDs…</td>
+</tr>
+<tr>
+<td align="center">pcf7931</td>
+<td>PCF7931 CHIPs…</td>
+</tr>
+<tr>
+<td align="center">pyramid</td>
+<td>Farpointe/Pyramid RFIDs…</td>
+</tr>
+<tr>
+<td align="center">securakey</td>
+<td>Securakey RFIDs…</td>
+</tr>
+<tr>
+<td align="center">t55xx</td>
+<td>T55xx CHIPs…</td>
+</tr>
+<tr>
+<td align="center">ti</td>
+<td>TI CHIPs…</td>
+</tr>
+<tr>
+<td align="center">viking</td>
+<td>Viking RFIDs…</td>
+</tr>
+<tr>
+<td align="center">visa2000</td>
+<td>Visa2000 RFIDs…</td>
+</tr>
+<tr>
+<td align="center">cmdread</td>
+<td>&lt;d period&gt; &lt;z period&gt; &lt;o period&gt; &lt;c command&gt; [‘H’] – Modulate LF reader field to send command before read (all periods in microseconds) (option ‘H’ for 134)</td>
+</tr>
+<tr>
+<td align="center">config</td>
+<td>Set config for LF sampling, bit/sample, decimation, frequency</td>
+</tr>
+<tr>
+<td align="center">flexdemod</td>
+<td>Demodulate samples for FlexPass</td>
+</tr>
+<tr>
+<td align="center">read</td>
+<td>[‘s’ silent] Read 125/134 kHz LF ID-only tag. Do ‘lf read h’ for help</td>
+</tr>
+<tr>
+<td align="center">search</td>
+<td>[offline] [‘u’] Read and Search for valid known tag (in offline mode it you can load first then search) - ‘u’ to search for unknown tags</td>
+</tr>
+<tr>
+<td align="center">sim</td>
+<td>[GAP] – Simulate LF tag from buffer with optional GAP (in microseconds)</td>
+</tr>
+<tr>
+<td align="center">simask</td>
+<td>[clock] [invert &lt;1|0&gt;] [biphase/manchester/raw &lt;’b’|’m’|’r’&gt;] [msg separator ‘s’] [d &lt;hexdata&gt;] – Simulate LF ASK tag from demodbuffer or input</td>
+</tr>
+<tr>
+<td align="center">simfsk</td>
+<td>[c &lt;clock&gt;] [i] [H &lt;fcHigh&gt;] [L &lt;fcLow&gt;] [d &lt;hexdata&gt;] – Simulate LF FSK tag from demodbuffer or input</td>
+</tr>
+<tr>
+<td align="center">simpsk</td>
+<td>[1|2|3] [c &lt;clock&gt;] [i] [r &lt;carrier&gt;] [d &lt;raw hex to sim&gt;] – Simulate LF PSK tag from demodbuffer or input</td>
+</tr>
+<tr>
+<td align="center">simbidir</td>
+<td>Simulate LF tag (with bidirectional data transmission between reader and tag)</td>
+</tr>
+<tr>
+<td align="center">snoop</td>
+<td>[‘l’|’h’|&lt;divisor&gt;] [trigger threshold]– Snoop LF (l:125khz, h:134khz)</td>
+</tr>
+<tr>
+<td align="center">vchdemod</td>
+<td>[‘clone’] – Demodulate samples for VeriChip</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h1><p><a target="_blank" rel="noopener" href="https://github.com/proxmark/proxmark3">官方 - Proxmark3</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/RfidResearchGroup/proxmark3">冰人 - Proxmark3</a></p>
+<hr>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1>
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。 </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
